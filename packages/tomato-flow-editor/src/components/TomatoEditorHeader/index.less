@@ -1,17 +1,16 @@
 .flow-editor-header {
   display: flex;
   align-items: center;
-  padding-left: 56px;
+  justify-content: space-between;
+  padding: 0 16px;
   height: 60px;
   box-shadow: 0 2px 5px rgb(0 0 0 / 8%);
   z-index: 9999;
-  background: url('https://hbimg.huabanimg.com/95e8a2dc5cb82fdc9c66275f04d3914af3a6916115038-ZOevHl_fw658/format/webp') no-repeat;
-  background-size: 36px 36px;
-  background-position-x: 7px;
-  background-position-y: 12px;
 }
 
 .flow-editor-header-title {
+  display: flex;
+  align-items: center;
   overflow: hidden;
   color: #000000d9;
   font-weight: 700;
@@ -21,4 +20,8 @@
   text-decoration: none;
   letter-spacing: .6px;
   user-select: none;
+  .logo {
+    margin-right: 8px;
+    font-size: 20px;
+  }
 }
