@@ -53,12 +53,20 @@ export default (props: FlowEditorType) => {
       height: document.body.clientHeight - 60,
       clipboard: true,
       grid: {
-        size: 10,      // 网格大小 10px
-        visible: true, // 绘制网格，默认绘制 dot 类型网格
-        args: { 
-          color: '#999', // 网格线/点颜色
-          thickness: 1,     // 网格线宽度/网格点大小
-        },
+        size: 10,
+        visible: true,
+        type: 'doubleMesh',
+        args: [
+          {
+            color: '#E7E8EA',
+            thickness: 1,
+          },
+          {
+            color: '#CBCED3',
+            thickness: 1,
+            factor: 5,
+          },
+        ],
       },
       panning: true,
       selecting: true,
